@@ -65,7 +65,7 @@ int count_procesos_aux;
 void setup() {
   Serial.begin(9600);
   //setup_lcd();
-  +setup_sensor();
+  setup_sensor();
   config_actuadores();
   Serial.println("Pruebas del proyecto - hijo Gerson Barahona");
   Serial.print("Numero de procesos validados: ");
@@ -223,5 +223,5 @@ void setup_lcd(void)
 {
   lcd_dispensadora.init();   //Inicio la comunicacion I2C con la pantalla LCD.
   lcd_dispensadora.backlight();   //enciendo la retroalimentación de la pantalla LCD.
-  lcd_dispensadora.print("Huecos"); 
+  lcd_dispensadora.print("Test"); 
 }
